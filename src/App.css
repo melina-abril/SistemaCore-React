@@ -1,0 +1,25 @@
+.app-shell {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text-primary);
+}
+.app-shell__body {
+  display: grid;
+  grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+  min-height: calc(100vh - 68px);
+}
+.app-shell__main {
+  width: 100%;
+  min-width: 0;
+  max-width: 1200px;
+  padding: 32px;
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .app-shell__body {
+    display: block;
+  }
+  .app-shell__main {
+    padding: 20px 16px;
+  }
+}
